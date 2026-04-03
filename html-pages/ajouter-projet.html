@@ -19,44 +19,62 @@
       <a href="contact.html" class="text-blue-600 hover:text-blue-900 font-medium">Contacts</a>
     </nav>
   </header>
+  <main class="max-w-2xl mx-auto px-6 py-10">
 
+  <!-- BOUTON RETOUR -->
+  <a href="../index.html" class="inline-block mb-6 text-blue-600 hover:text-blue-900 font-medium">
+    🔙 Retour à l'accueil
+  </a>
 
-  <main>
-    <div class="content">
-      <div class="btn-back-index">
-        <button class="btn-back"><a href="../index.html">🔙Retour à l'accueil</a></button>
+  <!-- FORMULAIRE -->
+  <div class="bg-white rounded-xl shadow p-8">
+    <h2 class="text-2xl font-bold text-blue-700 mb-6">Ajouter un nouveau projet</h2>
+
+    <form id="addProjectForm" class="flex flex-col gap-4">
+
+      <div class="flex flex-col gap-1">
+        <label for="projectName" class="text-sm font-medium text-gray-600">Nom du projet</label>
+        <input type="text" id="projectName" name="projectName" required
+          class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" />
       </div>
-      <h2>Ajouter un nouveau projet</h2>
-      <form id="addProjectForm">
 
-        <label for="projectName">Nom du projet:</label>
-        <input type="text" id="projectName" name="projectName" required />
+      <div class="flex flex-col gap-1">
+        <label for="projectDescription" class="text-sm font-medium text-gray-600">Description du projet</label>
+        <textarea id="projectDescription" name="projectDescription" required rows="4"
+          class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+      </div>
 
-        <label for="projectDescription">Description du projet:</label>
-        <textarea id="projectDescription" name="projectDescription" required></textarea>
+      <div class="flex flex-col gap-1">
+        <p class="text-sm font-medium text-gray-600">Technologies</p>
+        <input type="text" placeholder="Technologie 1" name="tech1" required
+          class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 mb-2" />
+        <input type="text" placeholder="Technologie 2" name="tech2"
+          class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 mb-2" />
+        <input type="text" placeholder="Technologie 3" name="tech3"
+          class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+      </div>
 
-        <label for="projectTechnologies">Technologie 1 </label>
-        <input type="text" id="projectTechnologies" name="projectTechnologies" required />
+      <div class="flex flex-col gap-1">
+        <label for="projectImage" class="text-sm font-medium text-gray-600">Image du projet</label>
+        <input type="file" id="projectImage" name="projectImage" accept="image/*"
+          class="border border-gray-300 rounded-lg px-4 py-2 text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+      </div>
 
-        <label for="projectTechnologies">Technologie 2 </label>
-        <input type="text" id="projectTechnologies" name="projectTechnologies" required />
+      <div class="flex gap-4 mt-2">
+        <button type="submit"
+          class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-800 font-medium">
+          Ajouter le projet
+        </button>
+        <button type="reset"
+          class="border border-gray-300 text-gray-600 px-6 py-2 rounded-lg hover:bg-gray-100 font-medium">
+          Réinitialiser
+        </button>
+      </div>
 
-        <label for="projectTechnologies">Technologie 3 </label>
-        <input type="text" id="projectTechnologies" name="projectTechnologies" required />
+    </form>
+  </div>
 
-        <div class="form-group">
-          <label for="projectImage">Image du projet:</label>
-          <input type="file" id="projectImage" name="projectImage" accept="image/*" />
-        </div>
-
-        <div class="btn-sub-res">
-          <button type="submit">Ajouter le projet</button>
-          <button type="reset">Réinitialiser</button>
-        </div>
-
-      </form>
-    </div>
-  </main>
+</main>
 
   <footer>
     <p>&copy; Portfolio Khady PENE</p>
