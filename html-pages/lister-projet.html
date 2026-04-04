@@ -1,76 +1,92 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Liste des projets - Portfolio</title>
+  <link href="../output.css" rel="stylesheet">
 </head>
+<body class="bg-gray-50 text-gray-800">
 
-<body class="bg-gray-50 text-black-200"> 
-
+  <!-- HEADER -->
   <header class="flex items-center justify-between px-8 py-4 bg-white shadow-md">
-    <img src="listes-projets/img/logo.jpeg" alt="Logo du Portfolio" class="w-16 h-16 rounded-full">
-
+    <a href="../index.html">
+      <img src="listes-projets/img/logo.jpeg" alt="Logo du Portfolio" class="w-16 h-16 rounded-full">
+    </a>
     <nav class="flex gap-6">
       <a href="#" class="text-blue-600 hover:text-blue-900 font-medium">Liste</a>
       <a href="ajouter-projet.html" class="text-blue-600 hover:text-blue-900 font-medium">Ajouter</a>
-      <a href="contact.html" class="text-blue-600 hover:text-blue-900 font-medium ">Contacts</a>
+      <a href="contact.html" class="text-blue-600 hover:text-blue-900 font-medium">Contacts</a>
     </nav>
   </header>
 
-  <main>
-    <div class="content">
+  <main class="max-w-4xl mx-auto px-6 py-10">
 
-      <div class="btn-back-index">
-        <button class="btn-back"><a href="../index.html">🔙Retour à l'accueil</a></button>
+    <!-- BOUTON RETOUR -->
+    <a href="../index.html" class="inline-block mb-6 text-blue-600 hover:text-blue-900 font-medium">
+      🔙 Retour à l'accueil
+    </a>
+
+    <h2 class="text-2xl font-bold text-blue-700 mb-6">Liste des projets</h2>
+
+    <!-- LISTE DES PROJETS -->
+    <div class="flex flex-col gap-6">
+
+      <!-- Projet 1 -->
+      <div class="bg-white rounded-xl shadow p-6 flex items-center justify-between gap-4">
+        <div class="flex items-center gap-4">
+          <img src="listes-projets/img/image1.png" alt="E-shop" class="w-24 h-24 object-cover rounded-lg">
+          <h3 class="text-lg font-semibold text-gray-800">E-shop</h3>
+        </div>
+        <div class="flex gap-3">
+          <a href="listes-projets/projet1.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-800 font-medium text-sm">
+            Voir Détails
+          </a>
+          <button class="border border-red-400 text-red-500 px-4 py-2 rounded-lg hover:bg-red-50 font-medium text-sm">
+            Supprimer
+          </button>
+        </div>
       </div>
 
-      <h2>Liste des projets</h2>
-      <div class="project-list">
-
-        <div class="project-item">
-          <div class="project-header">
-            <h2>E-shop</h2>
-            <img src="/html-pages/listes-projets/img/image1.png" alt="Image du projet E-shop">
-          </div>
-          <div class="btn-dd">
-            <button class="btn-detail"><a href="listes-projets/projet1.html">Voir Détails</a></button>
-            <button class="btn-delete"><a href="#">Supprimer</a></button>
-          </div>
+      <!-- Projet 2 -->
+      <div class="bg-white rounded-xl shadow p-6 flex items-center justify-between gap-4">
+        <div class="flex items-center gap-4">
+          <img src="listes-projets/img/image2.jpg" alt="Fitness Mobile App" class="w-24 h-24 object-cover rounded-lg">
+          <h3 class="text-lg font-semibold text-gray-800">Fitness Mobile App</h3>
         </div>
-
-        <div class="project-item">
-          <div class="project-header">
-            <h2>Fetnes Mobile App</h2>
-            <img src="/html-pages/listes-projets/img/image2.jpg" alt="Image du projet Fetnes Mobile App">
-          </div>
-          <div class="btn-dd">
-            <button class="btn-detail"><a href="listes-projets/projet2.html">Voir Détails</a></button>
-            <button class="btn-delete"><a href="#">Supprimer</a></button>
-          </div>
+        <div class="flex gap-3">
+          <a href="listes-projets/projet2.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-800 font-medium text-sm">
+            Voir Détails
+          </a>
+          <button class="border border-red-400 text-red-500 px-4 py-2 rounded-lg hover:bg-red-50 font-medium text-sm">
+            Supprimer
+          </button>
         </div>
+      </div>
 
-        <div class="project-item">
-          <div class="project-header">
-            <h2>Dashboard Analytics</h2>
-            <img src="/html-pages/listes-projets/img/image3.jpg" alt="Image du projet Dashboard Analytics">
-          </div>
-          <div class="btn-dd">
-            <button class="btn-detail"><a href="listes-projets/projet3.html">Voir Détails</a></button>
-            <button class="btn-delete"><a href="#">Supprimer</a></button>
-          </div>
-
+      <!-- Projet 3 -->
+      <div class="bg-white rounded-xl shadow p-6 flex items-center justify-between gap-4">
+        <div class="flex items-center gap-4">
+          <img src="listes-projets/img/image3.jpg" alt="Dashboard Analytics" class="w-24 h-24 object-cover rounded-lg">
+          <h3 class="text-lg font-semibold text-gray-800">Dashboard Analytics</h3>
         </div>
-
+        <div class="flex gap-3">
+          <a href="listes-projets/projet3.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-800 font-medium text-sm">
+            Voir Détails
+          </a>
+          <button class="border border-red-400 text-red-500 px-4 py-2 rounded-lg hover:bg-red-50 font-medium text-sm">
+            Supprimer
+          </button>
+        </div>
       </div>
 
     </div>
   </main>
 
-  <footer>
-    <p>&copy; 2026 G4 Fullstack Portfolio</p>
+  <!-- FOOTER -->
+  <footer class="text-center py-4 bg-white shadow-inner text-gray-700 text-sm mt-10">
+    <p>&copy;  Portfolio Khady PENE</p>
   </footer>
-</body>
 
+</body>
 </html>
