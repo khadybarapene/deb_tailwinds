@@ -6,25 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/image1.png">
     <title>Dashboard Analytics</title>
+    <link href="../../output.css" rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <img src="html-pages/listes-projets/img/logo.jpeg" alt="Logo du Portfolio" class="logo" href="../../index.html"/>
-        <nav class="nav-menu">
-            <a href="../lister-projet.html">Liste</a>
-            <a href="../ajouter-projet.html">Ajouter</a>
-            <a href="../contact.html">Contacts</a>
+<body class="bg-gray-50 text-gray-800">
+    <header class="flex items-center justify-between px-8 py-4 bg-white shadow-md">
+        <img src="img/logo.jpeg" alt="Logo du Portfolio" class="w-16 h-16 rounded-full">
+        <nav class="flex gap-6">
+            <a href="../lister-projet.html" class="text-blue-500 hover:text-blue-700">Liste</a>
+            <a href="../ajouter-projet.html" class="text-blue-500 hover:text-blue-700">Ajouter</a>
+            <a href="../contact.html" class="text-blue-500 hover:text-blue-700 ">Contacts</a>
         </nav>
     </header>
 
-    <main>
-        <div class="content">
-            <div class="btns">
-                <button class="btn-back"><a href="../../index.html">🔙Retour à l'accueil</a></button>
-            </div>
-            <h2>Dashboard Analytics</h2>
-            <h3>Description du projet</h3>
+    <main class="max-w-4xl mx-auto px-6 py-10">
+        <a href="../../index.html" class="text-blue-500 hover:text-blue-700">🔙Retour à l'accueil</a>
+        <div class="bg-white rounded-xl shadow p-8">
+            <h2 class="text-2xl font-bold text-blue-500 mb-4">Dashboard Analytics</h2>
+            <h3 class="text-xl font-semibold  mb-2"  >Description du projet</h3>
             <p>
                 Dashboard Analytics est une application de visualisation de données développée en utilisant le framework
                 React.
@@ -33,7 +32,7 @@
                 L'application offre une interface conviviale et personnalisable pour les transactions, ainsi que des
                 fonctionnalités de gestion des stocks et de suivi des commandes pour les administrateurs.
             </p>
-            <h3>Technologies utilisées</h3>
+            <h3 class="text-xl font-semibold mb-2">Technologies utilisées</h3>
             <ul>
                 <li>React</li>
                 <li>JavaScript</li>
@@ -46,7 +45,7 @@
         </div>
     </main>
 
-    <footer>
+    <footer class="text-center py-4 bg-white shadow-md mt-10">
         <p>&copy; Portfolio Khady PENE</p>
     </footer>
 </body>
